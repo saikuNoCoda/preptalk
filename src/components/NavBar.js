@@ -5,7 +5,7 @@ import { Nav,Navbar } from 'react-bootstrap';
 export default class NavBar extends Component {
     render() {
         return (
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className='p-3'>
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className='p-3' sticky="top">
             <Navbar.Brand href="#home">
             <img 
               alt=""
@@ -20,11 +20,11 @@ export default class NavBar extends Component {
               <Nav className="mr-auto"></Nav>
 
               <Nav>
-                <Nav.Link href="#deets">What is PrepTalk?</Nav.Link>
-                <Nav.Link href="#memes">Pricing</Nav.Link>
-                <Nav.Link href="#memes">Stories</Nav.Link>
-                <Nav.Link href="#memes">Meet the Team</Nav.Link>
-                <Nav.Link href="#memes">Contact</Nav.Link>
+                <Nav.Link href="#about">What is PrepTalk?</Nav.Link>
+                <Nav.Link href="#pricing">Pricing</Nav.Link>
+                <Nav.Link href="#testimonial">Stories</Nav.Link>
+                <Nav.Link href="#team">Meet the Team</Nav.Link>
+                <Nav.Link href="#contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>

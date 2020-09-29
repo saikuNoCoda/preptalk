@@ -24,7 +24,7 @@ const Team = () => {
     };
 
     return (
-        <div className="w-10">
+        <div className="w-10" id="team">
             <div className="text-center bg-light p-5">
                 <h2>Our Team</h2>
             </div>

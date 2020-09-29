@@ -67,7 +67,7 @@ const Contact = () => {
     };
 
     return (
-        <div>
+        <div id="contact">
             <div className="text-center bg-light p-5">
                 <h2>Want to schedule an Interview?</h2>
             </div>

@@ -24,7 +24,7 @@ const Pricing = () => {
     };
 
     return (
-        <div className="bg-light">
+        <div className="bg-light" id="pricing">
             <div className="text-center bg-white p-5">
                 <h2>Features and Pricing</h2>
             </div>

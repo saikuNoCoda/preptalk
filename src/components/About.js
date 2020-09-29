@@ -24,7 +24,7 @@ const About = () => {
     };
 
     return (
-        <div>
+        <div id="about">
             <div className="text-center bg-light p-5">
                 <h2>What is PrepTalk?</h2>
             </div>
