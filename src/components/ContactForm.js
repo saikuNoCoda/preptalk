@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form,Row,Col,Button,Alert } from 'react-bootstrap';
 import * as emailjs from 'emailjs-com';
 
-emailjs.init('user_R1cNpl9DL7glx4NqeGdyw');
+emailjs.init('user_JgeJ08agvsaeL2W1uyGYC');
 
 const Contact = () => {
 
@@ -48,8 +48,8 @@ const Contact = () => {
         };
 
         emailjs.send(
-            'divyanshverma12',
-            'template_g3rq2vl',
+            'preptalks1',
+            'template_3h0hyz9',
             templateParams,
         ).then(() => {
             setSubmitMessage("Successfully Submitted!!");
