@@ -6,7 +6,7 @@ export default class NavBar extends Component {
     render() {
         return (
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className='p-3' sticky="top">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
             <img 
               alt=""
               src="/icon.png"

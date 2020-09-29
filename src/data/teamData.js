@@ -1,13 +1,14 @@
 const teamData = [
     {
         id: 1,
-        name: "Divyansh Verma",
+        name: "???",
         profile: "Software Engineer",
-        linkLink: "divyanshvermafc",
-        linkFace: "failedcoder",
+        linkLink: "???",
+        linkFace: "???",
         offers: [
-            "Myntra",
-            "Samsung"
+            "???",
+            "???",
+            "???"
         ]
     },
 ];
