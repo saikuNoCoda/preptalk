@@ -8,7 +8,7 @@ import Pricing from "./components/Pricing";
 import Testimonial from "./components/Testimonial";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
-
+import ContactForm from "./components/ContactForm";
 
 import './App.css'
 
@@ -21,6 +21,7 @@ function App() {
       <Pricing />
       <Testimonial />
       <Team />
+      <ContactForm />
       <Contact />
     </div>
   );
