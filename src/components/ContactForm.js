@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form,Row,Col,Button,Alert,Spinner } from 'react-bootstrap';
+import { Form,Row,Col,Button,Alert } from 'react-bootstrap';
 import * as emailjs from 'emailjs-com';
 
 emailjs.init('user_R1cNpl9DL7glx4NqeGdyw');
