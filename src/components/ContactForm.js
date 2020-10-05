@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form,Row,Col,Button,Alert } from 'react-bootstrap';
 import * as emailjs from 'emailjs-com';
-
+import validator from 'validator';
 emailjs.init('user_JgeJ08agvsaeL2W1uyGYC');
 
 const Contact = () => {
@@ -18,12 +18,12 @@ const Contact = () => {
     const [loadings,setLoadings] = useState(false);
 
     useEffect(() => {
-        if(sumbitMessage === "Oops, Something went wrong"){
-            setShow(true);
-            setVariant("danger");
-        }else if(sumbitMessage === "Successfully Submitted!!"){
+        if(sumbitMessage === "Successfully Submitted!!"){
             setShow(true);
             setVariant("success");
+        }else if(sumbitMessage.length > 0){
+            setShow(true);
+            setVariant("danger");
         }else {
             setShow(false);
         }
@@ -36,34 +36,54 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        setLoadings(true);
-        setSubmitMessage("");
+        if(!validator.isEmail(email)){
 
-        var templateParams = {
-            from_email: email,
-            from_name: name,
-            from_mobile: mobile,
-            from_plan: plan,
-            from_message: message
-        };
+            setSubmitMessage("Please enter correct Email Address");
+            
+        }else if(name.length <= 0){
 
-        emailjs.send(
-            'preptalks1',
-            'template_3h0hyz9',
-            templateParams,
-        ).then(() => {
-            setSubmitMessage("Successfully Submitted!!");
-        }).catch((err) => {
-            console.log(err);
-            setSubmitMessage("Oops, Something went wrong");
-        });
+            setSubmitMessage("Please enter your name");
 
-        setName("");
-        setEmail("");
-        setMobile("");
-        setPlan("");
-        setMessage("");
-        setLoadings(false);
+        }else if(!validator.isMobilePhone(mobile)){
+
+            setSubmitMessage("Please enter valid mobile number");
+
+        }else if(message.length <= 0){
+
+            setSubmitMessage("Enter link to your resume");
+        
+        }
+        else {
+            setLoadings(true);
+            setSubmitMessage("");
+
+            var templateParams = {
+                from_email: email,
+                from_name: name,
+                from_mobile: mobile,
+                from_plan: plan,
+                from_message: message
+            };
+    
+            emailjs.send(
+                'preptalks1',
+                'template_3h0hyz9',
+                templateParams,
+            ).then(() => {
+                setSubmitMessage("Successfully Submitted!!");
+            }).catch((err) => {
+                console.log(err);
+                setSubmitMessage("Oops, Something went wrong");
+            });
+
+            setName("");
+            setEmail("");
+            setMobile("");
+            setPlan("");
+            setMessage("");
+            setLoadings(false);
+        }
+
     };
 
     return (
@@ -109,7 +129,8 @@ const Contact = () => {
                     <Col sm={10}>
                         <Form.Control as="select" defaultValue="Other..."
                         value={plan} onChange={(e) => setPlan(e.target.value)} >
-                            <option>Other....</option>
+                            <option>Other.... </option>
+                            <option>Free Mock</option>
                             <option>1 DSA</option>
                             <option>3 DSA</option>
                             <option>1 HR</option>
@@ -121,10 +142,10 @@ const Contact = () => {
                 </Form.Group>
                 <Form.Group as={Row} controlId="Message">
                     <Form.Label column sm={2}>
-                        Query
+                        Resume
                     </Form.Label>
                     <Col sm={10}>
-                        <Form.Control type="text" placeholder="Any Query regarding us."
+                        <Form.Control type="text" placeholder="Link to your resume"
                         value={message} onChange={(e) => setMessage(e.target.value)} />
                     </Col>
                 </Form.Group>

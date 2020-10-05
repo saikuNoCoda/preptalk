@@ -1,7 +1,7 @@
 const pricingData = [
     {
         id: 1,
-        price: "???",
+        price: "250",
         about: [
             "1 DSA Mock Interview",
             "Company Specific",
@@ -10,7 +10,7 @@ const pricingData = [
     },
     {
         id: 2,
-        price: "???",
+        price: "600",
         about: [
             "3 DSA Mock Interview",
             "Company Specific",
@@ -19,7 +19,7 @@ const pricingData = [
     },
     {
         id: 3,
-        price: "???",
+        price: "200",
         about: [
             "1 HR Mock Interview",
             "Company Specific",
@@ -28,7 +28,7 @@ const pricingData = [
     },
     {
         id: 4,
-        price: "???",
+        price: "350",
         about: [
             "1 DSA + 1 HR Mock Interview",
             "Company Specific",
@@ -37,7 +37,7 @@ const pricingData = [
     },
     {
         id: 5,
-        price: "???",
+        price: "500",
         about: [
             "2 DSA + 1 HR Mock Interview",
             "Company Specific",
@@ -46,7 +46,7 @@ const pricingData = [
     },
     {
         id: 6,
-        price: "???",
+        price: "700",
         about: [
             "3 DSA Mock Interview (Difficult)",
             "Company Specific",

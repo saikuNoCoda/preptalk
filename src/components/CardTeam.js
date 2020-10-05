@@ -5,7 +5,7 @@ import { Col,Card,Badge } from 'react-bootstrap';
 const CardTeam = ({name,profile,linkLink,linkFace,offers}) => {
     return (
         <Col className="mb-5 px-5 text-center">
-            <Card border="light">
+            <Card>
                 <Card.Body>
                     <Card.Title>
                     <div className="mb-3">
@@ -26,7 +26,7 @@ const CardTeam = ({name,profile,linkLink,linkFace,offers}) => {
                     />
                     </a>
                     </div>
-                    &#8281;{name}&#8281;
+                    &#8281;{" " + name + " "}&#8281;
                     </Card.Title>
                     <Card.Subtitle className="mb-2 text-muted p-2">{profile}</Card.Subtitle>
                     <Card.Text>
