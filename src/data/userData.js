@@ -11,6 +11,16 @@ const userData = [
     },
     {
         id: 2,
+        name: "Rahul Kauraiya",
+        college: "National institute of technology Karnataka",
+        link: "reclone-rk",
+        description: "To achieve anything two things are important other than hardwork. One is confidence and Guidance. This platform helped me a lot in getting both the things. Their constant support and guidance made me to clear the Target. And because of the guidance I got a lot of confidence inside me. My suggestion is go for it.  It will help you a lot.",
+        offers: [
+            "Target Corporation"
+        ]
+    },
+    {
+        id: 3,
         name: "Rupesh Nitnaware",
         college: "National institute of technology Karnataka",
         link: "imgr00t",

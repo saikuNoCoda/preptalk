@@ -1,6 +1,16 @@
 const teamData = [
     {
         id: 1,
+        name: "Anmol Horo",
+        profile: "Software Engineer",
+        linkLink: "anmolh123",
+        linkFace: "anmol.horo.90",
+        offers: [
+            "Make My Trip",
+        ]
+    },
+    {
+        id: 2,
         name: "Divyansh Verma",
         profile: "Software Engineer",
         linkLink: "divyanshvermafc",
@@ -11,24 +21,14 @@ const teamData = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         name: "Vichitr",
         profile: "Software Engineer",
         linkLink: "vichitrgandas",
         linkFace: "vichitrgandas",
         offers: [
-            "Myntra",
+            "Visa",
             "Samsung Semiconductor"
-        ]
-    },
-    {
-        id: 3,
-        name: "Anmol Horo",
-        profile: "Software Engineer",
-        linkLink: "anmolh123",
-        linkFace: "anmol.horo.90",
-        offers: [
-            "Make My Trip",
         ]
     }
 ];
