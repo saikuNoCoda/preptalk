@@ -1,12 +1,12 @@
 const teamData = [
     {
         id: 1,
-        name: "Anmol Horo",
+        name: "Bharat Sharma",
         profile: "Software Engineer",
-        linkLink: "anmolh123",
-        linkFace: "anmol.horo.90",
+        linkLink: "genu05",
+        linkFace: "bharat.sharma.779857",
         offers: [
-            "Make My Trip",
+            "Zynga",
         ]
     },
     {
