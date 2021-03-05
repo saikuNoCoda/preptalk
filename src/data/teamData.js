@@ -16,6 +16,7 @@ const teamData = [
         linkLink: "divyanshvermafc",
         linkFace: "failedcoder",
         offers: [
+            "Google",
             "Myntra",
             "Samsung R&D"
         ]
