@@ -13,7 +13,7 @@ const teamData = [
         id: 2,
         name: "Divyansh Verma",
         profile: "Software Engineer",
-        linkLink: "divyanshvermafc",
+        linkLink: "saikunocoda",
         linkFace: "failedcoder",
         offers: [
             "Google",
@@ -28,6 +28,7 @@ const teamData = [
         linkLink: "vichitrgandas",
         linkFace: "vichitrgandas",
         offers: [
+            "Amazon",
             "Visa",
             "Samsung Semiconductor"
         ]
